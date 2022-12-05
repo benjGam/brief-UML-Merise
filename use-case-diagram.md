@@ -35,28 +35,22 @@ Le diagramme de cas d'utilisation possède plusieurs composants, tels que les su
 ### Les relations
 
 - La généralisation : Un acteur est au sein du diagramme de cas d'utilisation un objet, cet objet peut hériter d'un autre. On appelle ce concept "la généralisation" est peut-être appliqué lorsque l'on peut dire d'un acteur qu'il en est un autre. Prenons un exemple : Une voiture est un Véhicule, la Voiture peut-être généralisée vers le Véhicule. (Les cas d'utilisations sont aussi des objets généralisables)
-  La généralisation se caractèrise par une flêche inversée se terminant par un triangle vide.
-  
-  
+  La généralisation se caractèrise par une flêche **inversée** se terminant par un triangle vide.
 
 - La communication : La communication est un type de relation qui survient lorsqu'un acteur intéragit avec un cas d'utilisation, on dit alors que l'acteur (principal) déclenche un cas d'utilisation.
-
-
 
 - L'utilisation : L'utilisation intervient lorsqu'un cas d'utilisation en appelle un autre, on dit que le cas d'utilisation A utilise le cas d'utilisation B.
   L'utilisation peut-être utile afin de factoriser le diagramme ou au contraire afin de décomposer un cas d'utilisation complexe afin de le rendre plus compréhensible.
   Ce type de relation est caractérisé par le terme "include" sur la relation.
-
-
 
 - La possibilité : La possibilité intervient de la même façon que l'utilisation, cependant, la possibilité représente une option, là où l'utilisation est obligatoire.
   Le possibilité se caractérise par le terme "extend" sur la relation.
 
 
 
+## Le complément textuel
 
-
-
+Le complément textuel est comme son nom l'indique, un moyen de rendre plus complet le diagramme de cas d'utilisation, celui-ci n'étant pas suffisamment précis, il est possible d'ajouter des informations afin d'avoir une vue plus précise du diagramme et donc du fonctionnement du programme final.
 
 
 
