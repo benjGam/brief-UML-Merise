@@ -58,3 +58,9 @@ On utilisera cette relation pour factoriser/décomponser un cas d'utilisation co
 La possibilité est un cas d'utilisation qui n'est pas inhérent à un cas d'utilisation, il peut en découler,<br>
 mais ce n'est pas strictement obligatoire, à l'inverse de l'utilisation. La possibilité se caractèrise par<br>
 le mot clè **extend**
+
+### Le complément textuel
+
+Le complément textuel est un moyen d'apporter plus d'informations concernant le diagramme de use-case<br>
+se pourrait-être apparenté à un lexique du diagramme de use-case, ou bien une extension, le complément<br>
+textuel, permet comme son nom l'indique d'apporter un complément au diagramme de use case.<br>
