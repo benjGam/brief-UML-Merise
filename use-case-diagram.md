@@ -30,9 +30,11 @@ Le diagramme de cas d'utilisation possède plusieurs composants, tels que les su
   
   - L'acteur secondaire : Il est invoqué par le système
 
-- Le cas d'utilisation : Le cas d'utilisation pourrait-être résumé par une action contenue au sein du système. Un cas d'utilisation à un début, un déroulement ainsi qu'une fin, il est visible par l'acteur principale et sert à décrire une action disponnible pour ce dernier.
+- Le cas d'utilisation : Le cas d'utilisation pourrait-être résumé par une action contenue au sein du système. Un cas d'utilisation à un début, un déroulement ainsi qu'une fin, il est visible par l'acteur principale et sert à décrire une action disponible pour ce dernier.
 
-- 
+### Les relations
+
+- La généralisation : Un acteur est au sein du diagramme de cas d'utilisation un objet, cet objet peut hériter d'un autre (acteur). On appelle ce concept "la généralisation" est peut-être appliqué lorsque l'on peut dire d'un acteur qu'il est un autre acteur. Prenons un exemple : Une voiture est Véhicule, la voiture peut-être généralisé vers le Véhicule.
 
 
 
