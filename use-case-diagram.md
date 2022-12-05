@@ -52,4 +52,4 @@ Le complément textuel est comme son nom l'indique, un moyen de rendre plus comp
 
 Voici un diagramme d'utilisation pour la companie Simplon Air Line    
 
-![take-plane.png](/home/mecopi/Dev/UML/Brief-1/brief-UML-Merise/Diagrams/use-cases/take-plane.png)
+![take-plane.png](Diagrams/use-cases/take-plane.png)
