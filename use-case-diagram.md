@@ -14,8 +14,6 @@ Afin d'écrire un diagramme de cas d'utilisation le plus clair possible il faut 
   
   - Mon diagramme n'est-il pas insuffisamment détaillé ? Devrais-je faire plusieurs diagrammes afin de détailler plus le fonctionnement de mon application ?
 
-
-
 ## Composition
 
 Le diagramme de cas d'utilisation possède plusieurs composants, tels que les suivants :
@@ -46,16 +44,12 @@ Le diagramme de cas d'utilisation possède plusieurs composants, tels que les su
 - La possibilité : La possibilité intervient de la même façon que l'utilisation, cependant, la possibilité représente une option, là où l'utilisation est obligatoire.
   Le possibilité se caractérise par le terme "extend" sur la relation.
 
-
-
-## Le complément textuel
+### Le complément textuel
 
 Le complément textuel est comme son nom l'indique, un moyen de rendre plus complet le diagramme de cas d'utilisation, celui-ci n'étant pas suffisamment précis, il est possible d'ajouter des informations afin d'avoir une vue plus précise du diagramme et donc du fonctionnement du programme final.
 
+### Résultat
 
+Voici un diagramme d'utilisation pour la companie Simplon Air Line    
 
-
-
-
-
-
+![take-plane.png](/home/mecopi/Dev/UML/Brief-1/brief-UML-Merise/Diagrams/use-cases/take-plane.png)
