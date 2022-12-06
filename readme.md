@@ -29,6 +29,8 @@
 
   - Dispose d'un nombre de place(s) disponible(s)
 
+  - Peut être lié de 0 à plusieurs vol(s)
+
 - Une escale :
   - Dispose d'une heure d'arrivée et de départ
 
@@ -56,6 +58,8 @@
 
 - Un passager :
   - Un passager possède 1 à plusieurs reservation(s)
+
+  - Un passager possède des informations
 
   - Un passager peut annuler sa réservation
 
