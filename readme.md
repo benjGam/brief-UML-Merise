@@ -8,15 +8,17 @@
 
   - Il peut être annulé par compagnie aérienne
 
-  - Il peut comporter 0 à n escale(s)
+  - Il peut comporter 0 à plusieurs escale(s)
 
   - Il dispose d'un nombre de places disponibles
 
-  - Il a un aéroport de départ et d'arrivée
+  - Il dispose un aéroport de départ et d'arrivée
 
-  - Il a une heure de départ et d'arrivée
+  - Il dispose une heure de départ et d'arrivée
 
-  - Il a un numéro d'identification
+  - Il dispose un numéro d'identification
+  
+  - Il dispose d'une liste de passager
 
   - Il est lié à un avion
 
@@ -37,7 +39,7 @@
   - Héberge 1 à n compagnie(s) aérienne(s)
 
 - Une réservation : 
-  - Possède 1 à n vol(s)
+  - Peut impliquer 1 à n vol(s)
 
   - Les informations du passager
 
@@ -49,8 +51,6 @@
 
 - Un passager :
   - Un passager possède 1 à n reservation(s)
-
-  - Un passager possède 1 passeport (des informations)
 
   - Un passager peut annuler sa réservation
 
