@@ -59,20 +59,59 @@
   - un confirmation ou une annulation 
   
   - un prix
+
+  - un numéro de siege
   
   - un numéro de réservation
 
-- Un utilisateur : 
-  
-  - a un
-  
-  - 
+---------------------------------------------------
 
-- Un utilisateur : 
-  
-  - peut consulter les vols , réserver un vol , ajouter des passagers
-  
-  - 
-    
+- Un vol :
+  - Un vol est créer par une companie aérienne
 
-      
+  - Il peut être ouvert et fermé à la reservation par la companie aérienne
+
+  - Il peut être annulé par companie aérienne
+
+  - Il peut comporter 0..n escale(s)
+
+  - Il dispose d'un nombre de place disponibles
+
+  - Il a un aéroport de départ et d'arrivée
+
+  - Il a une heure de départ et d'arrivée
+
+  - Il a un numéro d'identification
+
+  - Il est lié à un avion
+
+- Une excale :
+  - Dispose d'une heure d'arrivée et de départ
+
+  - Un aéroport
+
+  - Un vol
+
+- Un aéroport : 
+  - Se situe dans une ville
+
+  - Heberge 1 .. n companie aérienne
+
+- Une réservation : 
+  - Possède 1 .. n vol
+
+  - Les informations du passager
+
+  - Peut-être annulé par le passager
+
+  - Un numéro de siège
+
+  - Un numéro d'identification
+
+- Un passager :
+  - A 1 .. n reservation
+
+  - A 1 passe-port (des informations)
+
+- Un client :
+  - Peut faire 1 .. n reservation(s)
