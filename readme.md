@@ -4,7 +4,7 @@
 - Une compagnie aérienne: 
   - Dispose d'1 à plusieurs avion(s)
 
-  - Se situe dans 1 à plusieurs aéroport(s)
+  - Peut être présente dans 1 à plusieurs aéroport(s)
 
   - Peut créer ou supprimer un vol
 
