@@ -67,13 +67,13 @@
 ---------------------------------------------------
 
 - Un vol :
-  - Un vol est créer par une companie aérienne
+  - Un vol est crée par une companie aérienne
 
-  - Il peut être ouvert et fermé à la reservation par la companie aérienne
+  - Il peut être ouvert et fermé à la réservation par la companie aérienne
 
   - Il peut être annulé par companie aérienne
 
-  - Il peut comporter 0..n escale(s)
+  - Il peut comporter 0 à n escale(s)
 
   - Il dispose d'un nombre de place disponibles
 
@@ -85,33 +85,41 @@
 
   - Il est lié à un avion
 
+  - Dispose d'une liste de passager
+
 - Une excale :
   - Dispose d'une heure d'arrivée et de départ
 
   - Est liée à un aéroport
 
   - Est liée à un vol
+  
+  - Dispose d'une liste de passager
 
 - Un aéroport : 
   - Se situe dans une ville
 
-  - Heberge 1 .. n companie aérienne
+  - Héberge 1 à n companie(s) aérienne(s)
 
 - Une réservation : 
-  - Possède 1 .. n vol
+  - Possède 1 à n vol(s)
 
   - Les informations du passager
 
-  - Peut-être annulé par le passager
+  - Peut être annulée par le passager
 
   - Possède un numéro de siège
 
   - Possède un numéro d'identification
 
 - Un passager :
-  - A 1 .. n reservation(s)
+  - Un passager possède 1 à n reservation(s)
 
-  - A 1 passe-port (des informations)
+  - Un passager possède 1 passe-port (des informations)
+
+  - Un passager peut annuler sa réservation
 
 - Un client :
-  - Peut faire 1 .. n reservation(s)
+  - Peut faire 1 à n réservation(s)
+
+  - Peut annuler la/les réservation(s) qu'il a réalisé
