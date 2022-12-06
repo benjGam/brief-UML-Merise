@@ -31,14 +31,14 @@
 
   - Il est lié à un avion
 
+  - Dispose d'une liste de passager
+
 - Une escale :
   - Dispose d'une heure d'arrivée et de départ
 
   - Est liée à un aéroport
 
   - Est liée à un vol
-  
-  - Dispose d'une liste de passager
 
 - Un aéroport : 
   - Se situe dans une ville
