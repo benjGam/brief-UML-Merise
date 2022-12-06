@@ -1,12 +1,21 @@
 # Règles de gestions
 >Les règles de gestion sont des règles qui permettent de définir des contraintes sur les données
 
+- Une compagnie aérienne: 
+  - Dispose d'1 à plusieurs avion(s)
+
+  - Se situe dans 1 à plusieurs aéroport(s)
+
+  - Peut créer ou supprimer un vol
+
+  - Peut ouvrir ou fermer les réservations concernant un vol
+
 - Un vol :
   - Un vol est créé par une compagnie aérienne
 
   - Il peut être ouvert et fermé à la réservation par la compagnie aérienne
 
-  - Il peut être annulé par compagnie aérienne
+  - Il peut être annulé par la compagnie aérienne dont il dépend
 
   - Il peut comporter 0 à plusieurs escale(s)
 
@@ -22,14 +31,7 @@
 
   - Il est lié à un avion
 
-  - Dispose d'une liste de passager
-
-- Un avion :
-  - Dispose d'un numéro d'identification
-
-  - Dispose d'un nombre de place(s) disponible(s)
-
-  - Peut être lié de 0 à plusieurs vol(s)
+  - Il dispose d'une liste de passager
 
 - Une escale :
   - Dispose d'une heure d'arrivée et de départ
@@ -44,6 +46,16 @@
   - Se situe dans une ville
 
   - Héberge 1 à plusieurs compagnie(s) aérienne(s)
+
+- Une ville : 
+  - Peut comporter de 0 à plusieurs aéroport(s)
+
+- Un avion :
+  - Dispose d'un numéro d'identification
+
+  - Dispose d'un nombre de place(s) disponible(s)
+
+  - Peut être lié de 0 à plusieurs vol(s)
 
 - Une réservation : 
   - Peut impliquer 1 à plusieurs vol(s)
@@ -61,9 +73,7 @@
 
   - Un passager possède des informations
 
-  - Un passager peut annuler sa réservation
-
 - Un client :
   - Peut faire 1 à plusieurs réservation(s)
 
-  - Peut annuler la/les réservation(s) qu’il a réalisé
+  - Peut annuler la/les réservation(s) qu’il a réalisé(s)
