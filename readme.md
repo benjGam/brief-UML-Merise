@@ -57,32 +57,6 @@
 
   - Appartient à une compagnie aérienne
 
-- Une réservation : 
-  - Peut impliquer 1 à plusieurs vol(s)
-
-  - Est liée à un aéroport
-
-  - Peut être annulée par le client ou par la companie
-
-  - Dispose des informations du vol
-
-  - Dispose d'une liste de passager
-
-- Un aéroport :
-  - Se situe dans une ville
-
-  - Héberge 1 à plusieurs compagnie(s) aérienne(s)
-
-- Une ville :
-  - Peut comporter de 1 à plusieurs aéroport(s)
-
-- Un avion :
-  - Dispose d'un numéro d'identification
-
-  - Dispose d'un nombre de place(s) disponible(s)
-
-  - Peut être lié de 0 à plusieurs vol(s)
-
 - Une réservation :
   - Peut impliquer 1 à plusieurs vol(s)
 
