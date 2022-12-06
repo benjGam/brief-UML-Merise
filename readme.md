@@ -62,7 +62,7 @@
 
   - Les informations du passager
 
-  - Peut être annulée par le passager
+  - Peut être annulée par le client
 
   - Dispose d'un numéro de siège
 
