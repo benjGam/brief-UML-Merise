@@ -1,7 +1,3 @@
-
-
-
-
 # Le Diagramme de cas d'utilisation
 
 ## Scénario  :
@@ -38,15 +34,7 @@
 
 - Se nom permet de décrire précisément l'interaction de l'utilisateur avec le système
   
-  ## Les relations
-  
-  - La généralisation
-  
-  - La communication
-  
-  - L'utilisation
-  
-  - La possibilité
+## Les relations
 
 ### La généralisation
 
@@ -62,8 +50,17 @@
 
 ### L'utilisation
 
-- C'est une relation entre deux cas d'utilisation, nous parlons aussi de relation d'inclusion (*include*)
+C'est une relation entre deux cas d'utilisation, nous parlons aussi de relation d'inclusion (**include**)
+On utilisera cette relation pour factoriser/décomponser un cas d'utilisation complexe (on atomise).
 
-- une relation d'utilisation entre 
+### La possibilité
 
+La possibilité est un cas d'utilisation qui n'est pas inhérent à un cas d'utilisation, il peut en découler,<br>
+mais ce n'est pas strictement obligatoire, à l'inverse de l'utilisation. La possibilité se caractèrise par<br>
+le mot clè **extend**
 
+### Le complément textuel
+
+Le complément textuel est un moyen d'apporter plus d'informations concernant le diagramme de use-case<br>
+se pourrait-être apparenté à un lexique du diagramme de use-case, ou bien une extension, le complément<br>
+textuel, permet comme son nom l'indique d'apporter un complément au diagramme de use case.<br>
