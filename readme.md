@@ -71,7 +71,7 @@
 
   - Il peut être ouvert et fermé à la réservation par la compagnie aérienne
 
-  - Il peut être annulé par la compagnie aérienne
+  - Il peut être annulé par compagnie aérienne
 
   - Il peut comporter 0 à n escale(s)
 
@@ -87,7 +87,7 @@
 
   - Dispose d'une liste de passager
 
-- Une excale :
+- Une escale :
   - Dispose d'une heure d'arrivée et de départ
 
   - Est liée à un aéroport
@@ -99,25 +99,25 @@
 - Un aéroport : 
   - Se situe dans une ville
 
-  - Héberge 1 à n companie(s) aérienne(s)
+  - Héberge 1 à n compagnie(s) aérienne(s)
 
 - Une réservation : 
-  - Peut impliquer 1 à n vol(s)
+  - Possède 1 à n vol(s)
 
   - Les informations du passager
 
-  - Comporte les informations du vol
-
   - Peut être annulée par le passager
 
-  - Dispose d'un numéro de siège
+  - Possède un numéro de siège
 
-  - Dispose d'un numéro d'identification
+  - Possède un numéro d'identification
 
 - Un passager :
   - Un passager possède 1 à n reservation(s)
 
   - Un passager possède 1 passe-port (des informations)
+
+  - Un passager peut annuler sa réservation
 
 - Un client :
   - Peut faire 1 à n réservation(s)
