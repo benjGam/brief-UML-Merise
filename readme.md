@@ -88,9 +88,9 @@
 - Une excale :
   - Dispose d'une heure d'arrivée et de départ
 
-  - Un aéroport
+  - Est liée à un aéroport
 
-  - Un vol
+  - Est liée à un vol
 
 - Un aéroport : 
   - Se situe dans une ville
@@ -104,12 +104,12 @@
 
   - Peut-être annulé par le passager
 
-  - Un numéro de siège
+  - Possède un numéro de siège
 
-  - Un numéro d'identification
+  - Possède un numéro d'identification
 
 - Un passager :
-  - A 1 .. n reservation
+  - A 1 .. n reservation(s)
 
   - A 1 passe-port (des informations)
 
