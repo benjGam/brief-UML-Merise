@@ -52,4 +52,4 @@ Le complément textuel est comme son nom l'indique, un moyen de rendre plus comp
 
 Voici un diagramme d'utilisation pour la companie Simplon Air Line    
 
-![take-plane.png](Diagrams/use-cases/take-plane.png)
+<img title="" src="Diagrams/use-cases/take-plane.png" alt="take-plane.png" width="814" data-align="center">

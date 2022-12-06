@@ -10,8 +10,6 @@
   
   - faire le diagramme pour le client pas le développeur 
 
-
-
 ## Le système
 
 - Pour chaque système il n'existe que 1 seul diagramme.
@@ -33,7 +31,7 @@
 - Un cas d'utilisation est déclenché par un acteur principal, il a un déroulement et une fin. (Le cas d'utilisation se représente par une ellipse et son nom)
 
 - Se nom permet de décrire précisément l'interaction de l'utilisateur avec le système
-  
+
 ## Les relations
 
 ### La généralisation

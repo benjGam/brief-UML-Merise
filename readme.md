@@ -1,51 +1,78 @@
+# Règles de gestions
 
-```mermaid
-sequenceDiagram
-Client->>Agence de voyages: Réserver un billet d'avion
-Agence de voyages->>Compagnie aérienne: Vérifier les disponibilités
-Compagnie aérienne-->>Agence de voyages: Réponse
-Agence de voyages->>Client: Confirmer la réservation
+- Un vol est ouvert à la réservation et refermé sur ordre de la compagnie.
+- Un vol peut être annulé par la compagnie
+- Un client peut réserver un ou plusieurs vols, pour des passagers différents.
+- Une réservation concerne un seul vol et un seul passager.
+- Une réservation peut être annulée ou confirmée.
+- Un vol a un aéroport de départ et un aéroport d’arrivée.
+- Un vol a un jour et une heure de départ, et un jour et une heure d’arrivée.
+- Un vol peut comporter des escales dans des aéroports.
+- Une escale a une heure d’arrivée et une heure de départ.
+- Chaque aéroport dessert une ou plusieurs villes.
+- Des compagnies aériennes proposent différents vols.
 
-```
-```mermaid
-sequenceDiagram
-Client->>Agence voyage: Réserver un billet d'avion
-Agence voyage->>Compagnie: Vérifier les disponibilités
-Compagnie -->>Agence voyage: Réponse
-Agence voyage->>Client: Confirmer la réservation
-```
-```mermaid
-graph TD
-A[Client] --> B[Agence de voyages]
-B --> C{Vérifier les disponibilités}
-C -->|Oui| D[Confirmer la réservation]
-C -->|Non| E[Affichezr les vols disponibles]
-E --> B
-```
-```mermaid
-stateDiagram
-[*] --> Etat1: Demande de réservation
-Etat1 --> Etat2: Vérification des disponibilités
-Etat1 --> Etat3: Affichage des vols disponibles
-Etat2 --> Etat4: Confirmation de la réservation
-Etat3 --> Etat1: Choix d'un autre vol
-Etat4 --> Etat5: Annulation de la réservation
-Etat4 --> Etat6: Confirmation de la réservation
-Etat6 --> [*]
-Etat5 --> [*]
-```
-```mermaid
-graph TD
-A[Client] --> B[Agence de voyages]
-B --> C{Vérifier les disponibilités}
-C -->|Oui| D[Confirmer la réservation]
-C -->|Non| E[Afficher les vols disponibles]
-D -->|Oui| F[Annuler la réservation]
-D -->|Non| G[Confirmer la réservation]
-E --> B
-```
+​
 
+- Un Vol :
+  
+  - est fermé ou ouvert  a la réservation par la compagnie 
+  
+  - un vol peut être annuler pas la compagnie
+  
+  - un vol peut comporter  0 ou plusieurs escales dans des aéroports 
+  
+  - un vol a un liste de passager 
+  
+  - a un aéroport de départ et d'arriver 
+  
+  - une heure de départ et d'arriver 
+  
+  - numéro de vol
+  
+  - peux etre reservé par une agence
+  
+  - a une c
 
+- Une escale 
+  
+  - a une heure d'arrivé et de départ 
+  
+  - un aéroport 
+  
+  - elle a un vol attribué 
 
-# Use Case 
-## Scénario 
+- Un aéroport 
+  
+  - dessert une ou plusieurs ville 
+  
+  - a une liste de compagnie attribué 
+  
+  - une ville dans la quel il est situé 
+
+- Une réservation 
+  
+  - Contient au moins 1 vol
+  
+  - information d'un passager
+  
+  - un confirmation ou une annulation 
+  
+  - un prix
+  
+  - un numéro de réservation
+
+- Un utilisateur : 
+  
+  - a un
+  
+  - 
+
+- Un utilisateur : 
+  
+  - peut consulter les vols , réserver un vol , ajouter des passagers
+  
+  - 
+    
+
+      
