@@ -33,6 +33,13 @@
 
   - Il dispose d'une liste de passager
 
+- Un avion :
+  - Dispose d'un numéro d'identification
+
+  - Dispose d'un nombre de place(s) disponible(s)
+
+  - Peut être lié de 0 à plusieurs vol(s)
+
 - Une escale :
   - Dispose d'une heure d'arrivée et de départ
 
@@ -47,6 +54,7 @@
 
   - Héberge 1 à plusieurs compagnie(s) aérienne(s)
 
+
 - Une ville : 
   - Peut comporter de 0 à plusieurs aéroport(s)
 
@@ -56,6 +64,7 @@
   - Dispose d'un nombre de place(s) disponible(s)
 
   - Peut être lié de 0 à plusieurs vol(s)
+
 
 - Une réservation : 
   - Peut impliquer 1 à plusieurs vol(s)
