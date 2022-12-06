@@ -67,11 +67,11 @@
 ---------------------------------------------------
 
 - Un vol :
-  - Un vol est crée par une companie aérienne
+  - Un vol est crée par une compagnie aérienne
 
-  - Il peut être ouvert et fermé à la réservation par la companie aérienne
+  - Il peut être ouvert et fermé à la réservation par la compagnie aérienne
 
-  - Il peut être annulé par companie aérienne
+  - Il peut être annulé par la compagnie aérienne
 
   - Il peut comporter 0 à n escale(s)
 
@@ -102,22 +102,22 @@
   - Héberge 1 à n companie(s) aérienne(s)
 
 - Une réservation : 
-  - Possède 1 à n vol(s)
+  - Peut impliquer 1 à n vol(s)
 
   - Les informations du passager
 
+  - Comporte les informations du vol
+
   - Peut être annulée par le passager
 
-  - Possède un numéro de siège
+  - Dispose d'un numéro de siège
 
-  - Possède un numéro d'identification
+  - Dispose d'un numéro d'identification
 
 - Un passager :
   - Un passager possède 1 à n reservation(s)
 
   - Un passager possède 1 passe-port (des informations)
-
-  - Un passager peut annuler sa réservation
 
 - Un client :
   - Peut faire 1 à n réservation(s)
