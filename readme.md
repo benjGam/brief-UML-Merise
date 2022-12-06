@@ -76,4 +76,10 @@
 - Un client :
   - Peut faire 1 à plusieurs réservation(s)
 
+  - Peut consulter la liste des vols disponibles
+
+  - Peut consulter un vol spécifique
+
+  - Doit s'identifier afin de réserver un vol
+
   - Peut annuler la/les réservation(s) qu’il a réalisé(s)
