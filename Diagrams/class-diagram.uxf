@@ -1,0 +1,152 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>14</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>392</x><y>336</y><w>406</w><h>448</h></coordinates><panel_attributes>Client
+--
+# firstName: String
+# lastName: String
+# phoneNumber: String
+# mailAddress: String
+- cardInfos: CardInformations
+-
++ BookingFlight(flight: Flight): void
++ CancelFlight(flight: Flight): void
+
++ getFirstName(): String
++ getLastName(): String
++ getPhoneNumber(): String
++ getMailAddress(): String
++ getCardInfos(): CardInformations
+
++ setFirstName(name: String): void
++ setLastName(name: String): void
++ setPhoneNumber(number: String): void
++ setMailAddress(address: String): void
++ setCardInfos(cardInfos: CardInformations): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>952</x><y>448</y><w>294</w><h>168</h></coordinates><panel_attributes>Booking
+--
+- bookingNumber: int
+- flights: List&lt;Flight&gt;
+- client : Client
+--
++ getBookingNumber(): int
++ getPassagers(): List&lt;Passager&gt;
++ getFlights(): List&lt;Flight&gt;</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>448</x><y>966</y><w>294</w><h>126</h></coordinates><panel_attributes>Passager
+--
+- seat: Seat
+--
++ getSeat(): Seat
+
++ setSeat(newSeat: Seat): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>448</x><y>126</y><w>294</w><h>140</h></coordinates><panel_attributes>Visitor
+--
+
+--
+# Identify(): void
+# ConsultFlights(): void
+# ConsultFlight(): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>896</x><y>854</y><w>392</w><h>532</h></coordinates><panel_attributes>Flight
+--
+- flightNumber: int
+- booked: bool
+- plane: Plane
+- aerialCompany: AerialCompany
+- startDate: Date
+- finishDate: Date
+- startPlace: Airport
+- endPlace: Airport
+--
++ getFlightID(): int
++ isBooked(): bool
++ getPlane(): Plane
++ getCompany(): AerialCompany
++ getStart(): String
++ getEnd(): String
+
++ setFlightID(id: int): void
++ setState(): void
++ setPlane(plane: Plane): void
++ setCompany(company: AerialCompany): void
++ setStartPlace(place: Airport): void
++ setEndPlace(place: Airport): void
++ setStartDate(date: Date): void
++ setEndDate(date: Date): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1400</x><y>420</y><w>294</w><h>266</h></coordinates><panel_attributes>AerialCompany
+--
+- name: String
+- planes: List&lt;Plane&gt;
+--
++ getName(): String
++ getPlanes(): List&lt;Plane&gt;
+
++ setName(): void
++ addPlane(plane: Plane): void
++ removePlane(plane:Plane): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1582</x><y>854</y><w>308</w><h>238</h></coordinates><panel_attributes>Plane
+--
+- planeNumber: int
+- seats: List&lt;Seat&gt;
+--
++ getPlaneID(): int
++ getSeats(): List&lt;Seat&gt;
++ getFuelCapacity(): int
+
++ setPlaneNumber(number:int): void
++ addSeat(seat:Seat): void
++ removeSeat(seat:Seat): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1596</x><y>1190</y><w>266</w><h>196</h></coordinates><panel_attributes>Seat
+--
+- location: int
+- available: bool
+--
++ getLocation(): int
++ isAvailable(): bool
+
++ setLocation(location:int): void
++ setAvailability(): void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1820</x><y>448</y><w>420</w><h>196</h></coordinates><panel_attributes>Airport
+--
+- townName: String
+- companies: List&lt;AerialCompany&gt;
+--
++ getTownName(): String
++ getCompanies(): List&lt;AerialCompany&gt;
+
++ addCompany(company: AerialCompany): void
++ removeCompany(company: AerialCompany): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>574</x><y>252</y><w>42</w><h>112</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>574</x><y>770</y><w>42</w><h>224</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;140</additional_attributes></element><element><id>Relation</id><coordinates><x>784</x><y>532</y><w>196</w><h>42</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>120;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1792</x><y>0</y><w>462</w><h>294</h></coordinates><panel_attributes>Town
+--
+- name: String
+- airports: List&lt;Airport&gt;
+- aerialCompanies: List&lt;AerialCompany&gt;
+--
++ getName(): String
++ getAirports(): List&lt;Airport&gt;
++ getAerialCompanies: List&lt;AerialCompany&gt;
+
++ setName(name: String): void
++ addAirport(airport: Airport): void
++ removeAirport(airport: Airport): void
++ addAerialCompany(company: AerialCompany): void
++ removeAerialCompany(company: AerialCompany): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>2016</x><y>280</y><w>42</w><h>196</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;120</additional_attributes></element><element><id>Text</id><coordinates><x>2030</x><y>420</y><w>56</w><h>28</h></coordinates><panel_attributes>1..1
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>2030</x><y>308</y><w>56</w><h>28</h></coordinates><panel_attributes>1..*
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>1694</x><y>518</y><w>56</w><h>28</h></coordinates><panel_attributes>1..*
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>1764</x><y>518</y><w>56</w><h>28</h></coordinates><panel_attributes>1..*
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1540</x><y>126</y><w>280</w><h>322</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>180;10;10;10;10;210</additional_attributes></element><element><id>Text</id><coordinates><x>1694</x><y>112</y><w>56</w><h>28</h></coordinates><panel_attributes>0..*
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>1554</x><y>392</y><w>56</w><h>28</h></coordinates><panel_attributes>1..1
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>490</y><w>252</w><h>210</h></coordinates><panel_attributes>CardInformations
+--
+- proprietorName: String
+- cardNumber: List&lt;int&gt;
+- expirationDate: Date
+- cryptogram: int
+--
++ getProprietorName(): String
++ getCardNumber(): List&lt;int&gt;
++ getExpirationDate(): Date
++ getCryptogram(): int</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>238</x><y>574</y><w>182</w><h>42</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>110;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1680</x><y>532</y><w>168</w><h>42</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>100;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>252</x><y>560</y><w>56</w><h>28</h></coordinates><panel_attributes>1..1
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>322</x><y>560</y><w>56</w><h>28</h></coordinates><panel_attributes>1..1
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1078</x><y>602</y><w>42</w><h>280</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;180;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>798</x><y>518</y><w>56</w><h>28</h></coordinates><panel_attributes>1..*
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>882</x><y>518</y><w>56</w><h>28</h></coordinates><panel_attributes>1..1
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>1092</x><y>616</y><w>56</w><h>28</h></coordinates><panel_attributes>1..*
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>1092</x><y>798</y><w>56</w><h>28</h></coordinates><panel_attributes>1..*
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1274</x><y>952</y><w>336</w><h>42</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>220;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>1288</x><y>938</y><w>56</w><h>28</h></coordinates><panel_attributes>1..*
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>1512</x><y>938</y><w>56</w><h>28</h></coordinates><panel_attributes>1..*
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1722</x><y>1078</y><w>42</w><h>140</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>1736</x><y>1092</y><w>56</w><h>28</h></coordinates><panel_attributes>1..*
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>1736</x><y>1134</y><w>56</w><h>28</h></coordinates><panel_attributes>1..1
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>728</x><y>1022</y><w>196</w><h>42</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;120;10</additional_attributes></element><element><id>Text</id><coordinates><x>770</x><y>1008</y><w>56</w><h>28</h></coordinates><panel_attributes>1..*
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>854</x><y>1008</y><w>56</w><h>28</h></coordinates><panel_attributes>1..*
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>1246</x><y>798</y><w>56</w><h>28</h></coordinates><panel_attributes>1..1
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>1498</x><y>686</y><w>56</w><h>28</h></coordinates><panel_attributes>0..*
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1232</x><y>672</y><w>294</w><h>210</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;130;10;50;190;50;190;10</additional_attributes></element></diagram>
